@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProApps — Useful apps for curious minds</title>
+  <meta name="description" content="A growing collection of AI-powered tools, everyday utilities, and learning apps for kids — all available on Google Play." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top">
+        <span class="nav__logo">◆</span>
+        <span>ProApps</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#apps">Apps</a>
+        <a href="#about">About</a>
+        <a class="nav__cta" href="https://play.google.com/store/apps/dev?id=8067309061059365942" target="_blank" rel="noopener">Play Store</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__content">
+        <span class="hero__eyebrow">Independent app studio</span>
+        <h1 class="hero__title">
+          Small apps.<br />
+          <span class="hero__title-accent">Big curiosity.</span>
+        </h1>
+        <p class="hero__lede">
+          I build thoughtful Android apps — from AI-powered tools that quietly save you time,
+          to everyday utilities that just work, to playful learning apps that help kids
+          fall in love with discovery. Each one starts with a simple question:
+          <em>could this be a little better, a little kinder, a little more delightful?</em>
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://play.google.com/store/apps/dev?id=8067309061059365942" target="_blank" rel="noopener">
+            Browse on Google Play
+            <span class="btn__arrow">→</span>
+          </a>
+          <a class="btn btn--ghost" href="#apps">See the categories</a>
+        </div>
+        <div class="hero__meta">
+          <div><strong>3</strong><span>Categories</span></div>
+          <div><strong>Android</strong><span>Platform</span></div>
+          <div><strong>Always</strong><span>Evolving</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="apps" id="apps">
+      <div class="section__header">
+        <h2>What I build</h2>
+        <p>Three directions, one philosophy — make it useful, make it kind, make it fun.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card card--ai">
+          <div class="card__icon" aria-hidden="true">✦</div>
+          <h3>AI-Powered Apps</h3>
+          <p>
+            Modern AI, packaged into focused tools that solve a single problem really well.
+            No bloat, no buzzwords — just intelligent assistants that earn their place on your home screen.
+          </p>
+          <ul class="card__tags">
+            <li>Smart</li>
+            <li>Fast</li>
+            <li>Practical</li>
+          </ul>
+        </article>
+
+        <article class="card card--general">
+          <div class="card__icon" aria-hidden="true">◎</div>
+          <h3>General Apps</h3>
+          <p>
+            Everyday utilities designed with care. The kind of small, dependable apps you reach for
+            without thinking — and never want to uninstall once you've tried them.
+          </p>
+          <ul class="card__tags">
+            <li>Simple</li>
+            <li>Reliable</li>
+            <li>Polished</li>
+          </ul>
+        </article>
+
+        <article class="card card--kids">
+          <div class="card__icon" aria-hidden="true">✿</div>
+          <h3>Kids Learning</h3>
+          <p>
+            Bright, friendly, ad-light learning apps built for little hands and curious minds.
+            Crafted to make discovery feel like play — not a worksheet in disguise.
+          </p>
+          <ul class="card__tags">
+            <li>Playful</li>
+            <li>Safe</li>
+            <li>Educational</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__inner">
+        <h2>Why this exists</h2>
+        <p>
+          The Play Store is full of apps. Most of them are fine. A few are brilliant. Many are
+          stuffed with ads and asking for permissions they don't need. I'm not trying to
+          out-ship the giants — I'm trying to make the kind of apps I'd want on my own phone,
+          and the kind I'd be happy to hand to a child.
+        </p>
+        <p>
+          Every app on my developer page is something I genuinely use, or something I built
+          because I wished it existed. If you find one helpful, that's the whole point.
+        </p>
+        <a class="btn btn--primary btn--lg" href="https://play.google.com/store/apps/dev?id=8067309061059365942" target="_blank" rel="noopener">
+          Visit my Play Store page
+          <span class="btn__arrow">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>© <span id="year"></span> ProApps. Made with care.</p>
+      <a href="https://play.google.com/store/apps/dev?id=8067309061059365942" target="_blank" rel="noopener">Google Play →</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
